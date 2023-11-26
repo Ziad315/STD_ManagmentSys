@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1699304541 source:c:\users\user\documents\c codes\studentmanagmentsystem\function.c
+	"function.h"
+
+1699542184 c:\users\user\documents\c codes\studentmanagmentsystem\function.h
+
+1699613674 source:c:\users\user\documents\c codes\studentmanagmentsystem\main.c
+	<stdio.h>
+	<stdlib.h>
+	"function.h"
+
