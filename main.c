@@ -52,7 +52,7 @@ uint16 *counter=0;
 
 
             case 5:
-             printf("Number of student = %d\n",counter);
+             printf("Number of student = %hs\n",counter);
              printf("==========================================\n");
              break;
 
