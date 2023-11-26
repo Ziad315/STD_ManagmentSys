@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1700994268 source:c:\users\user\documents\c codes\studentmanagmentsystem\function.c
+1701004120 source:c:\users\user\documents\c codes\studentmanagmentsystem\function.c
 	"function.h"
 
-1700993948 c:\users\user\documents\c codes\studentmanagmentsystem\function.h
+1701004062 c:\users\user\documents\c codes\studentmanagmentsystem\function.h
 
-1700992662 source:c:\users\user\documents\c codes\studentmanagmentsystem\main.c
+1701004062 source:c:\users\user\documents\c codes\studentmanagmentsystem\main.c
 	<stdio.h>
 	<stdlib.h>
 	"function.h"

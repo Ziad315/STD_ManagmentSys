@@ -22,9 +22,6 @@ void SBD_AddEntry(student list[],int *counter);
 void SBD_DeleteEntry(student list[],int *counter);
 void SDB_ReadEntry(student list[],int *counter);
 int SDB_isIdExist(student list[],int *counter,int id);
-
-void display(student list);
-void EDIT(student list[],int *counter);
-void displayAll(student list[],int *counter);
+void SDB_GetList(student list[],int *counter);
 
 #endif
