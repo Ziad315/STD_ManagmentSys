@@ -26,25 +26,12 @@ void SBD_AddEntry(student list[],int *counter)
       printf("\n Enter third course grade:");
       scanf("%d",&list[*counter].course3_grade);
 
-      *counter++;
+      //*counter++;
       printf("\n student is added successfully\n");
   }
 }
-/*
-int SDB_isIdExist(student list[],int *counter,int id)
-{
- for (int i = 0; i < *counter; i++)
-    {
-        if (list[i].student_ID == id)
-            {
-                return 1;
-            }
-            else
-            {
-                return 0;
-            }
 
-}*/
+
 void SBD_DeleteEntry(student list[],int *counter)
 {
    int id;
@@ -61,16 +48,18 @@ void SBD_DeleteEntry(student list[],int *counter)
                 {
                    list[j] = list[j + 1];
                 }
-    (*counter)--;
+        (*counter)--;
+            printf("Student is deleted successfully\n");
 
-    break;
+       break;
             }
-    printf("Student is deleted successfully\n");
-     }
-   if(index=-1)
+
+      if(index=-1)
    {
         printf("Student is not found\n");
    }
+
+     }
 
 
 
@@ -113,7 +102,29 @@ void SDB_GetList(student list[],int *counter)
     }
     for(int j=0;j < *counter;j++)
     {
-        printf("%d\t",arr[j]);
+        printf("%d\n",arr[j]);
     }
 
+}
+
+void SBD_action(int *choice)
+{
+        printf("Enter your choice: ");
+        scanf("%d", choice);
+}
+
+int SDB_isIdExist(student list[],int *counter,int id)
+{
+ for (int i = 0; i < *counter; i++)
+    {
+        if (list[i].student_ID == id)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+
+}
 }

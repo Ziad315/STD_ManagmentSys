@@ -9,8 +9,7 @@ uint16 main()
 uint16 choice;
 student list[SIZE];
 uint16 *counter=0;
-uint32 count=0;
-uint16 index= counter-1;
+
     printf("\t\t\t\t===== Welcome to Student Management System ======\n");
     while(1) {
 
@@ -21,14 +20,13 @@ uint16 index= counter-1;
         printf("5. Sum of Student \n");
         printf("6. Exit\n");
         printf("---------------------------------\n");
-        printf("Enter your choice: ");
-        scanf("%d", &choice);
+
+      SBD_action(&choice);
 
       switch(choice) {
            case 1:
                   SBD_AddEntry(list,&counter);
-                  counter++;
-                  count++;
+                  *counter++;
                   printf("\n==========================================\n");
                  break;
 
@@ -42,7 +40,6 @@ uint16 index= counter-1;
 
            case 3:
                SBD_DeleteEntry(list,&counter);
-               --count;
                printf("==========================================\n");
                break;
 
@@ -55,7 +52,7 @@ uint16 index= counter-1;
 
 
             case 5:
-             printf("Number of student = %d\n",count);
+             printf("Number of student = %d\n",counter);
              printf("==========================================\n");
              break;
 

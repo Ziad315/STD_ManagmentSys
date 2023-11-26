@@ -18,10 +18,13 @@ typedef struct
      uint32 course3_ID;
      uint32 course3_grade;
 }student;
+
 void SBD_AddEntry(student list[],int *counter);
 void SBD_DeleteEntry(student list[],int *counter);
 void SDB_ReadEntry(student list[],int *counter);
 int SDB_isIdExist(student list[],int *counter,int id);
 void SDB_GetList(student list[],int *counter);
+void SBD_action(int *choice);
+
 
 #endif
