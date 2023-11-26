@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "function.h"
-#define SIZE 5
+#define SIZE 10
 
 
 uint16 main()
 {
 uint16 choice;
 student list[SIZE];
-uint16 counter;
+uint16 *counter=0;
 uint16 index= counter-1;
     printf("\t\t\t\t===== Welcome to Student Management System ======\n");
     while(1) {
 
         printf("1. Add Student\n");
-        printf("2. View Student\n");
+        printf("2. Find Student\n");
         printf("3. Delete Student\n");
         printf("4. Update Student\n");
         printf("5. Sum of Student \n");
@@ -26,22 +26,25 @@ uint16 index= counter-1;
 
       switch(choice) {
            case 1:
-                  add(list,&counter);
+                  SBD_AddEntry(list,&counter);
                   counter++;
-                  printf("==========================================\n");
+                  printf("\n==========================================\n");
                  break;
 
-           case 2:
-               display(list[counter-1]);
+
+
+            case 2:
+               SDB_ReadEntry(list,&counter);
                printf("==========================================\n");
                break;
 
 
            case 3:
-               DEL(list,&counter);
+               SBD_DeleteEntry(list,&counter);
                printf("==========================================\n");
                break;
-
+      }
+/*
 
             case 4:
               EDIT(list,&counter);
@@ -63,6 +66,7 @@ uint16 index= counter-1;
 
        }
 
-
+*/
 }
+
 }
